@@ -1,0 +1,16 @@
+:root {
+    --bg: #ffffff;
+    --fg:#111;
+    --muted:#666;
+    --primary: #DC272D;
+    --secondary: #009BDE;
+    --tertiary: #678c07;
+    --maxw:120rem;
+    --gutter:2rem;
+    --p-gradient: linear-gradient(to bottom, #FF7E7E, #DC272D);
+    --s-gradient: linear-gradient(to bottom, #51CAFF, #009BDE)
+}
+$bp-lg:1280px;
+$bp-md:992px;
+$bp-sm:768px;
+$bp-sx:480px;

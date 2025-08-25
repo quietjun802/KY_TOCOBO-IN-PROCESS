@@ -1,0 +1,15 @@
+.Section{
+    padding: 6rem 0;
+    position: relative;
+    z-index: 0;
+}
+.Section,
+header,
+footer{
+    .inner {
+        max-width: var(--bp-lg);
+        height: 100%;
+        position: relative;
+        margin: auto;
+    }
+}
