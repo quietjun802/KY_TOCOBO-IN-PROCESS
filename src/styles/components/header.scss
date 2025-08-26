@@ -1,0 +1,78 @@
+.TopBanner {
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+  }
+}
+
+header {
+    position: fixed;
+    margin-top: 20px;
+    top: 4rem;
+    width: 100%;
+    z-index: 4;
+    background: #fff;
+
+    .inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        position: relative;
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    nav {
+        flex: 1;
+
+        ul {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li a {
+                text-decoration: none;
+                font-size: 18px;
+                color: #DC272D;
+                letter-spacing: 0;
+                line-height: 105px;
+                margin-right: 40px;
+                display: block;
+                font-weight: normal;
+
+                &:hover {
+                    color: #000;
+                }
+            }
+        }
+    }
+
+    .tit {
+        flex: 0;
+        text-align: center;
+
+        img {
+            display: inline-block;
+            height: 40px;
+        }
+    }
+
+    .util-menu {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        gap: 5.2rem;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}

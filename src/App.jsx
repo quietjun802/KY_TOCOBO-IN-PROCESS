@@ -9,7 +9,7 @@ import "./styles/main.scss";
 
 export default function App() {
   return (
-    <>
+    <div>
       <Header />
       <main>
         <section id="Hero" className="Section"><Hero /></section>
@@ -19,6 +19,6 @@ export default function App() {
         <section id="Cta" className="Section"><Cta /></section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
