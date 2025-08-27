@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from './Nav'
 import Util from './Util'
-import TopBanner from './TopBanner'
+
 import { headerData } from '../util/header'
 import "../styles/components/header.scss"
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div>
-      <TopBanner />
+
 
       <header>
         <div className="inner">
@@ -22,6 +22,7 @@ const Header = () => {
           </h1>
           <Util />
         </div>
+
       </header>
     </div>
   )

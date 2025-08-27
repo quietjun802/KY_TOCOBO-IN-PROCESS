@@ -1,78 +1,47 @@
-.TopBanner {
-  a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 13px;
-  }
-}
-
 header {
     position: fixed;
-    margin-top: 20px;
+    z-index: 4;
     top: 4rem;
     width: 100%;
-    z-index: 4;
-    background: #fff;
-
+    height: 10.5rem;
+    transition: top .3s ease;
     .inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 2rem;
-        position: relative;
-        margin: 0 auto;
-        width: 95%;
-    }
-
-    nav {
-        flex: 1;
-
-        ul {
+        nav ul {
             display: flex;
-            gap: 1.5rem;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-
-            li a {
-                text-decoration: none;
-                font-size: 18px;
-                color: #DC272D;
-                letter-spacing: 0;
-                line-height: 105px;
-                margin-right: 40px;
+            gap: 2rem;
+            a{
                 display: block;
-                font-weight: normal;
-
-                &:hover {
-                    color: #000;
+                font-size: 1.8rem;
+                color: var(--primary);
+                position: relative;
+                padding: 0 .5rem;
+                &:after {
+                    display: block;
+                    content:"";
+                    width: 0%;
+                    height: .1rem;
+                    background-color: var(--primary);
+                    left: 0;
+                    position: absolute;
+                    transition: width .3s ease;
+                }
+                &:hover:after{
+                    width: 100%;
                 }
             }
         }
-    }
-
-    .tit {
-        flex: 0;
-        text-align: center;
-
-        img {
-            display: inline-block;
-            height: 40px;
+        h1.tit {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
         }
-    }
+        .util-lst{
+            display: flex;
+            gap: 1.2rem;
 
-    .util-menu {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-        gap: 5.2rem;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        img {
-            width: 30px;
-            height: 30px;
         }
     }
 }

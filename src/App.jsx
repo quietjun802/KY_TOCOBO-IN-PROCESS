@@ -5,11 +5,23 @@ import Products from "./sections/Products";
 import Reviews from "./sections/Reviews";
 import Cta from "./sections/Cta";
 import Footer from "./components/Footer";
+import TopBanner from "./components/TopBanner";
+import { useState } from "react";
 import "./styles/main.scss";
+import TopBtn from "./components/TopBtn";
 
 export default function App() {
+
+  const [topBanner, setTopBanner] = useState("")
+
+  const upTopBanner = ()=>{
+    setTopBanner("up")
+  }
+
   return (
-    <div>
+    <div className={`app-container ${topBanner}`}>
+      <TopBtn/>
+      <TopBanner onClick={upTopBanner}/>
       <Header />
       <main>
         <section id="Hero" className="Section"><Hero /></section>

@@ -1,0 +1,62 @@
+.hero-container {
+    height: 90rem;
+
+    .swiper {
+        height: 100%;
+
+        .swiper-slide {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+
+            .inner {
+                display: flex;
+                align-items: center;
+            }
+
+            .hs-1 {
+                h2.tit {
+                    color: var(--main-slider01-tit)
+                }
+
+                p.txt {
+
+                    color: var(--main-slider01-sub)
+                }
+            }
+        }
+
+        .hs-2 {
+            h2.tit {
+                color: var(--main-slider02-tit)
+            }
+
+            p.txt {
+
+                color: var(--main-slider02-sub)
+            }
+        }
+
+        .hs-3 {
+            h2.tit {
+                color: var(--main-slider03-tit)
+            }
+
+            p.txt {
+
+                color: var(--main-slider03-sub)
+            }
+        }
+
+        .hs-4 {
+            h2.tit {
+                color: var(--main-slider04-tit)
+            }
+
+            p.txt {
+
+                color: var(--main-slider04-sub)
+            }
+        }
+    }
+}
