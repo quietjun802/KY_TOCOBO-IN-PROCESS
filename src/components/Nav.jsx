@@ -2,7 +2,6 @@ import React from 'react'
 import useSmoothScroll from '../hooks/useSmoothScroll'
 import { headerData } from '../util/header'
 
-
 const Nav = () => {
   const navLink = headerData.menus
 

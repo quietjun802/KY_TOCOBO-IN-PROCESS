@@ -14,28 +14,28 @@ export default function useSmoothScroll({
     return () => window.removeEventListener("scroll", onScroll);
   }, [threshold]);
 
-  // 특정 ID로 스크롤
+  // 특정 ID로 스크롤 (없으면 맨 위로)
   const scrollTo = useCallback(
     (id) => {
-      const el = document.getElementById(id);
-      if (el) {
-        el.scrollIntoView({
-          behavior,
-          block: "start"
-        });
+      if (id) {
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({
+            behavior,
+            block: "start"
+          });
+          return;
+        }
       }
+      // 해당 id가 없으면 그냥 맨 위로 이동
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior
+      });
     },
     [behavior]
   );
 
-  // 맨 위로 스크롤
-  const scrollToTop = useCallback(() => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior
-    });
-  }, [behavior]);
-
-  return { show, scrollTo, scrollToTop };
+  return scrollTo;
 }

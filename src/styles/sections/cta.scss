@@ -1,0 +1,23 @@
+.cta-inner {
+    .cta-list{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        >li {
+            text-align: center;
+            .img-wrap {
+
+                width: 13rem;
+                height: 13rem;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-repeat: no-repeat;
+                border-radius: 50%;
+            }
+            p {
+                font-size: 1.5rem;
+                margin-top: .9rem;
+            }
+        }
+    }
+}

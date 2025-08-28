@@ -1,7 +1,7 @@
 header {
     position: fixed;
     z-index: 4;
-    top: 4rem;
+    top: 6rem;
     width: 100%;
     height: 10.5rem;
     transition: top .3s ease;
@@ -9,6 +9,7 @@ header {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        max-width: 160rem !important;
         nav ul {
             display: flex;
             gap: 2rem;

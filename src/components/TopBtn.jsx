@@ -1,22 +1,24 @@
-import React from "react";
-import useSmoothScroll from "../hooks/useSmoothScroll"; // 방금 만든 훅
-import "../styles/components/topbtn.scss";
-
+import React from 'react'
+import '../styles/components/topbtn.scss'
+import useSmoothScroll from '../hooks/useSmoothScroll'
 const TopBtn = () => {
-  // show: 버튼 노출 여부, scrollToTop: 위로 이동 함수
-  const { show, scrollToTop } = useSmoothScroll({ threshold: 200 });
-
-  if (!show) return null; // 아직 스크롤이 threshold보다 작으면 버튼 숨김
-
+  const scrollTo = useSmoothScroll()
   return (
-    <button
-      className={`top-btn ${show ? "fade-in" : "fade-out"}`}
-      onClick={scrollToTop}
-      aria-label="위로 가기"
-    >
-      🦊
-    </button>
-  );
-};
+    <div>
+      {/* icon_top.svg */}
+      <button
+        onClick={(e) => {
+          e.preventDefault()
+          scrollTo('Hero')
+        }}
+        className='top-btn'><img src="/img/icon_top.svg" alt="위로가기 버튼"/></button>
+      {/* icon_talk.svg */}
+      <a href="#" className="talk-btn">
+        TCB
+      </a>
+      <p>1:1 Talk</p>
+    </div>
+  )
+}
 
-export default TopBtn;
+export default TopBtn

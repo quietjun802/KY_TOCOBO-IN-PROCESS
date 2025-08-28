@@ -1,3 +1,8 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 .hero-container {
     height: 90rem;
 
@@ -12,50 +17,131 @@
             .inner {
                 display: flex;
                 align-items: center;
+                max-width: 160rem;
+
+            }
+        }
+
+        .hs-1 {
+            h2.tit {
+                color: var(--main-slider01-tit);
             }
 
-            .hs-1 {
-                h2.tit {
-                    color: var(--main-slider01-tit)
-                }
-
-                p.txt {
-
-                    color: var(--main-slider01-sub)
-                }
+            p.txt {
+                color: var(--main-slider01-sub);
             }
         }
 
         .hs-2 {
             h2.tit {
-                color: var(--main-slider02-tit)
+                color: var(--main-slider02-tit);
             }
 
             p.txt {
-
-                color: var(--main-slider02-sub)
+                color: var(--main-slider02-sub);
             }
         }
 
         .hs-3 {
             h2.tit {
-                color: var(--main-slider03-tit)
+                color: var(--main-slider03-tit);
             }
 
             p.txt {
+                color: var(--main-slider03-sub);
+            }
 
-                color: var(--main-slider03-sub)
+            a.btn {
+                &:after {
+                    background-color: var(--main-slider03-tit);
+                }
+
+                &:hover {
+                    color: var(--bg);
+                }
             }
         }
 
         .hs-4 {
             h2.tit {
-                color: var(--main-slider04-tit)
+                color: var(--main-slider04-tit);
             }
 
             p.txt {
+                color: var(--main-slider04-sub);
+            }
 
-                color: var(--main-slider04-sub)
+            &:after {
+                background-color: var(--main-slider04-tit);
+            }
+
+            &:hover {
+                color: var(--bg);
+            }
+        }
+
+        .hero-nav {
+            position: absolute;
+            left: 7.5vw;
+            bottom: 8.7rem;
+            display: flex;
+            align-items: center;
+            z-index: 3;
+            
+
+            .arr-prev,
+            .arr-next {
+                width: 5rem;
+                height: 1.7rem;
+                font-size: 0;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                cursor: pointer;
+            }
+
+            .arr-prev {
+                background-image: url(/img/icon_main_ban_arrow_prev.svg);
+            }
+
+            .arr-next {
+                background-image: url(/img/icon_main_ban_arrow_next.svg);
+            }
+
+            .swiper-pagination-fraction {
+                width: 5rem;
+                height: 5rem;
+                margin: 0 2rem;
+                position: relative;
+                font-size: 0;
+                font-family: "Florencesans", "Noto Sans KR";
+                color: var(--bg);
+
+                .swiper-pagination-current {
+                    position: absolute;
+                    font-size: 2.2rem;
+                    left: 0;
+                    top: 0;
+                }
+                
+                .swiper-pagination-total {
+                    position: absolute;
+                    font-size: 2.2rem;
+                    bottom: 0;
+                    right: 0;
+                }
+
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 1px;
+                    background-color: var(--bg);
+                    height: 50px;
+                    position: absolute;
+                    left: 10%;
+                    top: 45%;
+                    transform: rotate(45deg) translate(-50%, -50%);
+                }
             }
         }
     }

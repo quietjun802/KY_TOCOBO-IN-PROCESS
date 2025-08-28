@@ -1,8 +1,10 @@
 .app-container {
+
     &.up {
-        .TopBanner{
-            top:-110%
+        .TopBanner {
+            top: -110%;
         }
+
         header {
             top: 0;
         }
@@ -10,16 +12,16 @@
 
     .Section {
         padding: 6rem 0;
+        position: relative;
+        z-index: 0;
         &#Hero {
             padding: 0;
         }
     }
 
-    .Section,
-    header,
-    footer {
+    .Section {
         .inner {
-            max-width: var(--maxw);
+            max-width: 128rem;
             height: 100%;
             position: relative;
             margin: auto;
@@ -29,9 +31,47 @@
 
 h2.tit {
     font-size: 7.3rem;
-    font-weight: 200;
+    font-weight: 200px;
 }
+
 p.txt {
     font-size: 2.1rem;
-    list-style:1.2
+    list-style: 1.2px;
+}
+
+a.btn {
+    display: inline-block;
+    margin-top: 3rem;
+    padding: 1.7rem 6.8rem;
+    font-size: 1.5rem;
+    position: relative;
+    color: var(--bg);
+    overflow: hidden;
+    border-radius: 6rem;
+    border: .1rem solid transparent;
+    transition: all .8s;
+    
+    
+    &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: var(--secondary);
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: -1;
+        transition: all .5s;
+    }
+
+    &:hover {
+        border: .1rem solid var(--secondary);
+        color: var(--secondary);
+
+        &:after {
+            background-color: var(--bg);
+        }
+    }
 }

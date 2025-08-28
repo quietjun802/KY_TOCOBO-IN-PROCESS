@@ -1,41 +1,23 @@
 .top-btn {
   position: fixed;
-  z-index: 10;
-  right: 2rem;
-  bottom: 2rem;
-
-  width: 56px;
-  height: 56px;
-  border-radius: 16px;
+  bottom: 2rem;   // 화면 하단에서 2rem
+  right: 2rem;    // 화면 오른쪽에서 2rem
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--secondary); // 프로젝트에서 지정한 주요 색상
+  color: var(--bg);
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* 눈에 잘 띄는 그라디언트 */
-  background: linear-gradient(135deg, #7f5eff, #00d4ff);
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-
-  border: none;
-  cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  z-index: 1000;  // 다른 요소 위에 보이도록
 
-  /* hover 시 효과 */
   &:hover {
-    transform: translateY(-4px) scale(1.08);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
-  }
-
-  /* 나타날 때 / 사라질 때 */
-  &.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  &.fade-out {
-    opacity: 0;
-    transform: translateY(12px);
-    pointer-events: none;
+    filter: brightness(90%);
+    transform: scale(1.05);
   }
 }
