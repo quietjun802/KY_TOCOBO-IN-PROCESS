@@ -1,0 +1,66 @@
+.inner.collection-inner{
+    text-align: center;
+    .t-wrap{
+        margin-bottom: 7rem ;
+        h2.tit{
+            color: var(--primary);
+        }
+        p.txt{
+            margin-top: 2rem;
+            color: var(--secondary);
+            font-size: 1.9rem;
+        }
+    }
+    .collection-slider{
+        .info-tit{
+
+        }
+        .kname{
+            
+        }
+        .name{
+
+        }
+        .img-wrap{
+            background-color: var(--bg);
+            width: 36rem;
+            height: 36rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            margin: auto;
+            border-radius: 1rem;
+            img{
+                height: 110%;
+                width: 110%;
+                animation: up 2s infinite alternate;
+            }
+        }
+        .swiper-pagination{
+            margin-top: 3rem;
+            position: static;
+            background-color: var(--bg);
+            height: .4rem;
+            .swiper-pagination-progressbar-fill{
+                background-color: var(--secondary);
+            }
+        }
+    }
+    .prev,.next{
+        position: absolute;
+        top: 70%;
+        transform: translateY(-50%);
+        display: block;
+        width: 3.5rem;
+        height: 6.7rem;
+    }
+    .prev{
+        left: -5rem;
+        background-image: url('/img/...');
+    }
+    .next{
+        right: -5rem;
+        background-image: url('/img/...');
+    }
+}

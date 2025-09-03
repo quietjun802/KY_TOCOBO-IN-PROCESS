@@ -6,16 +6,18 @@ const Cta = () => {
     <div className='inner cta-inner'>
       <ul className="cta-list">
         {categories.map((cta) => (
+
           <li key={cta.id}>
-            <a href={cta.href}></a>
-            <div className="img-wrap" style={{ backgroundImage: `url(${cta.img.src})` }}>
-              {/* <img src="" alt="" /> */}
-            </div>
+            <a href={cta.href}>
 
-            <p>
-              {cta.name}
+              <div className="img-wrap" style={{ backgroundImage: `url(${cta.img.src})` }}>
+                {/* <img src="" alt="" /> */}
+              </div>
+              <p>
+                {cta.name}
 
-            </p>
+              </p>
+            </a>
           </li>
         ))}
       </ul>

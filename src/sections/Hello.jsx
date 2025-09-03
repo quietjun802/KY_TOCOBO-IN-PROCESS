@@ -1,16 +1,23 @@
 import React from 'react'
-
+import {helloData} from '../util/hello'
+import "../styles/sections/hello.scss"
 const Hello = () => {
   return (
-    <div className='inner'>
+    <div className='inner hello-inner'>
         <div className="img-wrap">
-            <img src="" alt="" />
+            <img src={helloData.media.src} alt={helloData.media.alt} />
         </div>
         <div className="t-wrap">
-            <p className="txt-2"></p>
-            <h2 className="tit"></h2>
-            <p className="txt-1"></p>
-            <a href="" className="btn"></a>
+            <p className="txt-2">{helloData.eyebrow}</p>
+            <h2 className="tit"
+             dangerouslySetInnerHTML={{__html:helloData.title}}
+            />
+            <p className="txt-1" 
+            dangerouslySetInnerHTML={{__html:helloData.description}}
+            />
+            <a href={helloData.href} className="btn">
+              {helloData.cta.label}
+            </a>
         </div>
     </div>
   )
