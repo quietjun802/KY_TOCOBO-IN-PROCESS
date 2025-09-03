@@ -16,7 +16,7 @@
 
         }
         .kname{
-            
+
         }
         .name{
 
@@ -57,10 +57,12 @@
     }
     .prev{
         left: -5rem;
-        background-image: url('/img/...');
+        background-image: url('/img/review_arrow_prev.svg');
+        background-repeat: no-repeat;
     }
     .next{
         right: -5rem;
-        background-image: url('/img/...');
+        background-image: url('/img/review_arrow_next.svg');
+        background-repeat: no-repeat;
     }
 }

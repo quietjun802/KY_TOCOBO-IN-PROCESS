@@ -43,7 +43,6 @@ const Collection = () => {
                     type: 'progressbar',
                 }}
                 onSwiper={(swiper)=>(swiperRef.current=swiper)}
-                navigation={true}
                 modules={[Pagination, Navigation]}
             >
                 {collectionData.map((sl, i) => (
@@ -66,8 +65,8 @@ const Collection = () => {
             {/* </SwiperSlide> */}
 
 
-            <a href="#" className="prev" ref={prevRef}>prev</a>
-            <a href="#" className="next" ref={nextRef}>next</a>
+            <a href="#" className="prev" ref={prevRef}></a>
+            <a href="#" className="next" ref={nextRef}></a>
         </div>
     )
 }
