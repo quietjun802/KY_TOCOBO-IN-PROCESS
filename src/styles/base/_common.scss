@@ -22,6 +22,8 @@
 
     .Section {
         padding: 6rem 0;
+        overflow: hidden;
+        position: relative;
 
         &#Hero {
             padding: 0;
@@ -29,6 +31,21 @@
         &#Collection{
             background-color: var(--bg2);
             padding: 10rem 0;
+        }
+        &#Skincare{
+            padding: 20rem 0 0;
+
+            &::after{
+                display: block;
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 10rem;
+                left: 0;
+                bottom: 0;
+                background-color: var(--bg2);
+                z-index: -1;
+            }
         }
     }
 
