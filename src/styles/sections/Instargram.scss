@@ -1,22 +1,33 @@
-.inner.instar-inner{
-    h2.tit{
-        color: var(--secondary);
+.inner.instar-inner {
+  h2.tit {
+    color: var(--secondary);
+  }
+
+  .instar-lst {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1rem;
+  margin-top: 4rem;
+
+  > li {
+    aspect-ratio: 1 / 1; // ✅ 정사각형 유지
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      filter: brightness(0.9);
     }
-    .instar-lst{
-        display: flex;
-        gap: 1rem;
-        margin-top: 4rem;
-        >li {
-            width: clamp(13rem, 15vw, 21.3rem);
-            height: clamp(13rem, 15vw, 21.3rem);
-        }
-        a{
-            display: block;
-            width: 100%;
-            height: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-    }
+  }
+}
 }

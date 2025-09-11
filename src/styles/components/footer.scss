@@ -9,6 +9,7 @@ footer {
         margin: auto;
         position: relative;
         gap: 5rem;
+
         .left {
             flex: 1;
 
@@ -45,19 +46,22 @@ footer {
 
         .right {
             flex: 1;
-            .cs-box a{
+
+            .cs-box a {
                 display: block;
                 font-size: 3rem;
                 color: var(--primary);
                 margin-bottom: 1.7rem;
                 font-weight: 400;
             }
-            p{
+
+            p {
                 font-size: 1.4rem;
                 color: #5b5b5b;
                 line-height: 2.2rem;
             }
-            .talk-btn{
+
+            .talk-btn {
                 border: .1rem solid var(--primary);
                 display: inline-block;
                 padding: 1.4rem 7.2rem 1.3rem;
@@ -67,12 +71,17 @@ footer {
                 color: var(--primary);
                 transition: all .3s;
             }
+
             .talk-btn:hover {
                 background-color: var(--secondary);
                 transform: scale(1.05);
                 font-size: 1.4rem;
             }
-            
+
+            .footer-legal {
+                display: none;
+            }
+
         }
 
         h4 {
@@ -83,6 +92,28 @@ footer {
             font-style: italic;
             font-weight: 400;
             margin-bottom: 2.5rem;
+        }
+
+        .footer-legal {
+            p {
+                color: var(--primary);
+                font-size: 1.2rem;
+                padding: 3rem 0 6rem;
+            }
+
+            .legal-links a {
+                display: inline-block;
+                margin-right: 2rem;
+                font-size: 1.3rem;
+                color: #6f6f6f;
+            }
+        }
+
+        .sns-links {
+            display: flex;
+            gap: 5rem;
+            margin-top: 2rem;
+            
         }
     }
 }

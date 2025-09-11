@@ -22,6 +22,15 @@ export const companyData = [
   "특판&대량구매문의 : 국내영업팀 sales@thepicton.com",
 ];
 
+export const footerLegal = {
+  copyright: "COPYRIGHT© 주식회사 픽톤 2021 TOCOBO. ALL RIGHT RESERVED.",
+  links: [
+    { label: "이용약관", href: "/terms" },
+    { label: "개인정보처리방침", href: "/privacy" },
+    { label: "이용안내", href: "/guide" }
+  ]
+};
+
 // 고객센터
 export const customerCenterData = {
   title: "Customer Center",

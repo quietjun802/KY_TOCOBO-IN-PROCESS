@@ -14,7 +14,7 @@ export const headerData = {
         { id: "Cta", label: "Cta", href: "#Cta", type: "section" },
         { id: "Hello", label: "Hello", href: "#Hello", type: "section" },
         { id: "Collection", label: "Collection", href: "#Collection", type: "section" },
-        { id: "SkicCare", label: "SkicCare", href: "#SkicCare", type: "section" },
+        { id: "SkinCare", label: "SkinCare", href: "#SkinCare", type: "section" },
         { id: "Instar", label: "Instar", href: "#Instar", type: "section" },
     ],
     // 상단 공지/배너 (TopBanner용)
