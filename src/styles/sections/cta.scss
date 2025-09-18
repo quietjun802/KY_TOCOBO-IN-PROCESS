@@ -3,6 +3,9 @@
         display: flex;
         justify-content: center;
         gap: 2rem;
+        @media screen and (max-width:1111px) {
+            flex-wrap: wrap;
+        }
         >li {
             text-align: center;
             .img-wrap {

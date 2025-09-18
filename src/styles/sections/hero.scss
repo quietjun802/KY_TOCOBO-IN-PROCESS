@@ -14,6 +14,13 @@
                 align-items: center;
                 max-width: 160rem;
 
+                @media screen and (max-width:1111px){
+                    .t-wrap{
+                        position: absolute;
+                        left: 2rem;
+                        bottom: 15rem;
+                    }
+                }
             }
         }
 
@@ -141,6 +148,29 @@
                     left: 10%;
                     top: 40%;
                     transform: rotate(45deg) translate(-50%,-50%);
+                }
+            }
+
+            @media screen and (max-width:1111px){
+                bottom: 3.9rem;
+                left: 2rem;
+
+                .arr-prev,
+                .arr-next {
+                    width: 4rem;
+                }
+                .arr-prev{
+                    background-image: url(/img/r_arrow_prev.svg);
+                }
+                .arr-next{
+                    background-image: url(/img/r_arrow_next.svg);
+                }
+                .swiper-pagination-fraction{
+                    color: var(--primary);
+
+                    &::after{
+                        background-color: var(--primary);
+                    }
                 }
             }
         }
