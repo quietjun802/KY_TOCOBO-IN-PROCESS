@@ -87,7 +87,7 @@ const Footer = () => {
           {/* 고객센터 */}
           <div 
           onClick={()=>setIsOpen(prevStatus =>!prevStatus)}
-          className={`{isOpen? "open":""} cus-wrap`}>
+          className={`${isOpen? "open":""} cus-wrap`}>
             <h4>
               {customerCenterData.title}
               <span className="m-plus"></span>

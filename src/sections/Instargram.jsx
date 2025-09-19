@@ -1,6 +1,6 @@
 import React from 'react'
 import instar from "../util/instar"
-import "../styles/sections/instargram.scss"
+import "../styles/sections/Instargram.scss"
 
 const Instargram = () => {
   // 딜레이 계산 함수 (CTA에서 쓴 거 그대로)
