@@ -10,6 +10,16 @@ footer {
         position: relative;
         gap: 5rem;
 
+        @media screen and (max-width:1719px) {
+            padding: 0 2rem;
+            gap: 3rem;
+        }
+
+        @media screen and (max-width:1111px) {
+            flex-direction: column;
+            padding: 0 2rem 10rem;
+        }
+
         .left {
             flex: 1;
 
@@ -21,6 +31,12 @@ footer {
                 color: #5b5b5b;
                 font-size: 1.3rem;
                 line-height: 2.5rem;
+            }
+
+            @media screen and (max-width:1111px) {
+                .footer-legal {
+                    display: none;
+                }
             }
         }
 
@@ -40,7 +56,12 @@ footer {
                         margin-top: 1.2rem;
                         color: var(--muted);
                     }
+
                 }
+            }
+
+            @media screen and (max-width:1111px) {
+                display: none;
             }
         }
 
@@ -70,25 +91,66 @@ footer {
                 margin-top: 2rem;
                 color: var(--primary);
                 transition: all .3s;
-            }
 
-            .talk-btn:hover {
-                background-color: var(--secondary);
-                transform: scale(1.05);
-                font-size: 1.4rem;
             }
 
             .footer-legal {
                 display: none;
             }
 
+            @media screen and (max-width:1111px) {
+                .footer-legal {
+                    display: block;
+                }
+
+                .cus-wrap {
+                    border-top: .1rem solid var(--line);
+                    border-bottom: .1rem solid var(--line);
+                    padding: 1.5rem 0;
+                    margin-bottom: 2rem;
+
+                    h4 {
+                        position: relative;
+                        margin-bottom: 0;
+                        .m-plus,
+                        .m-plus::after {
+                            display: block;
+                            content: "";
+                            width: 1.4rem;
+                            height: .2rem;
+                            position: absolute;
+                            background-color: var(--primary);
+                            right: 0;
+                            top: 50%;
+                            transition: all .3s;
+                        }
+                        .m-plus::after {
+                            transform: rotate(90deg);
+                        }
+                    }
+                    .hidden {
+                        height: 0;
+                        overflow: hidden;
+                        transition: height 0.4s ease;
+                        .cs-box{
+                            margin-top: 2rem;
+                        }
+                    }
+                    &.open {
+                        h4{
+                            .m-plus::after {
+                                transform: rotate(0deg);
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         h4 {
             font-size: 1.8rem;
             color: var(--primary);
-            font-family: "Source Serif Pro",
-                serif;
+            font-family: "Source Serif Pro", serif;
             font-style: italic;
             font-weight: 400;
             margin-bottom: 2.5rem;
@@ -108,12 +170,11 @@ footer {
                 color: #6f6f6f;
             }
         }
-
         .sns-links {
             display: flex;
             gap: 5rem;
             margin-top: 2rem;
-            
+
         }
     }
 }
