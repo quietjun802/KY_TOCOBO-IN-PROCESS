@@ -80,9 +80,11 @@
 
     .prev {
         left: -5rem;
+        background-image: url('/img/pd_slide_arrow_prev.svg');
     }
-
+    
     .next {
         right: -5rem;
+        background-image: url('/img/pd_slide_arrow_next.svg');
     }
 }
